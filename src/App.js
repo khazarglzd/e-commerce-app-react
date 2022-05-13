@@ -1,11 +1,15 @@
 import React from "react";
 import Header from "./common/header/Header";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 import "./App.css";
 
 export default function App() {
   return (
-    <div>
-      <Header />
-    </div>
+    <>
+      <Router>
+        <Header />
+        <Switch></Switch>
+      </Router>
+    </>
   );
 }
