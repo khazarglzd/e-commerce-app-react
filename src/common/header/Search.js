@@ -24,8 +24,8 @@ const Search = (cardItem) => {
 
           <div className="icon f_flex width">
             <i className="fa fa-user icon-circle"></i>
-            <div className="cart">
-              <Link to="/cart">
+            <div className="card">
+              <Link to="/card">
                 <i className="fa fa-shopping-bag icon-circle"></i>
                 <span>{cardItem.length === 0 ? "" : cardItem.length}</span>
               </Link>
