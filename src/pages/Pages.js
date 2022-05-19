@@ -6,7 +6,7 @@ const Pages = ({ productItems, cardItem, addToCard }) => {
   return (
     <>
       <Home cardItem={cardItem} />
-      <FlashDeals productItems={productItems} />
+      <FlashDeals productItems={productItems} addToCard={addToCard} />
     </>
   );
 };

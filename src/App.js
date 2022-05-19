@@ -29,7 +29,7 @@ export default function App() {
   return (
     <>
       <Router>
-        <Header />
+        <Header cardItem={cardItem} />
         <Switch>
           <Route path="/" exact>
             <Pages productItems={productItems} addToCard={addToCard} />
