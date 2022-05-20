@@ -26,6 +26,22 @@ export default function App() {
       setCardItem([...cardItem, { ...product, qty: 1 }]);
     }
   };
+
+  const decreaseQty = (product) => {
+    const productExit = cardItem.find((item) => item.id === product.id);
+    if (productExit.qty === 1) {
+      setCardItem(cardItem.filter((item) => item.id !== product.id));
+    } else {
+      setCardItem(
+        cardItem.map((item) =>
+          item.id === product.id
+            ? { ...productExit, qty: productExit.qty - 1 }
+            : item
+        )
+      );
+    }
+  };
+
   return (
     <>
       <Router>
@@ -35,7 +51,11 @@ export default function App() {
             <Pages productItems={productItems} addToCard={addToCard} />
           </Route>
           <Route path="/card" exact>
-            <Card cardItem={cardItem} addToCard={addToCard} />
+            <Card
+              cardItem={cardItem}
+              addToCard={addToCard}
+              decreaseQty={decreaseQty}
+            />
           </Route>
         </Switch>
       </Router>

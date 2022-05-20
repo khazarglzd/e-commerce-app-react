@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../components/assets/images/logo.svg";
 import { Link } from "react-router-dom";
 
-const Search = (cardItem) => {
+const Search = ({ cardItem }) => {
   window.addEventListener("scroll", function () {
     const search = document.querySelector(".search");
     search.classList.toggle("active", window.scrollY > 100);
