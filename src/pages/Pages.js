@@ -3,6 +3,7 @@ import Home from "../components/mainpage/Home";
 import FlashDeals from "../components/flashDeals/FlashDeals";
 import TopCate from "../components/top/TopCate";
 import NewArrivals from "../components/newarrivals/NewArrivals";
+import Discount from "../components/discount/Discount";
 
 const Pages = ({ productItems, cardItem, addToCard }) => {
   return (
@@ -11,6 +12,7 @@ const Pages = ({ productItems, cardItem, addToCard }) => {
       <FlashDeals productItems={productItems} addToCard={addToCard} />
       <TopCate />
       <NewArrivals />
+      <Discount />
     </>
   );
 };
