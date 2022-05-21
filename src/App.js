@@ -6,6 +6,7 @@ import Data from "./components/flashDeals/Data";
 import Sdata from "./components/shop/Sdata";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
+import Footer from "./common/footer/Footer";
 
 export default function App() {
   const { productItems } = Data;
@@ -64,6 +65,7 @@ export default function App() {
             />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </>
   );
