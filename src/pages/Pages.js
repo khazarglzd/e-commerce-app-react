@@ -5,6 +5,8 @@ import TopCate from "../components/top/TopCate";
 import NewArrivals from "../components/newarrivals/NewArrivals";
 import Discount from "../components/discount/Discount";
 import Shop from "../components/shop/Shop";
+import Announcement from "../components/announcement/Announc";
+import Wrapper from "../components/wrapper/Wrapper";
 
 const Pages = ({ productItems, cardItem, addToCard, shopItems }) => {
   return (
@@ -15,6 +17,8 @@ const Pages = ({ productItems, cardItem, addToCard, shopItems }) => {
       <NewArrivals />
       <Discount />
       <Shop shopItems={shopItems} addToCard={addToCard} />
+      <Announcement />
+      <Wrapper />
     </>
   );
 };
