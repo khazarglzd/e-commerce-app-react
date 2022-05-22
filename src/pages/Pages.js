@@ -8,15 +8,15 @@ import Shop from "../components/shop/Shop";
 import Announcement from "../components/announcement/Announc";
 import Wrapper from "../components/wrapper/Wrapper";
 
-const Pages = ({ productItems, cardItem, addToCard, shopItems }) => {
+const Pages = ({ productItems, CartItem, addToCart, shopItems }) => {
   return (
     <>
-      <Home cardItem={cardItem} />
-      <FlashDeals productItems={productItems} addToCard={addToCard} />
+      <Home CartItem={CartItem} />
+      <FlashDeals productItems={productItems} addToCart={addToCart} />
       <TopCate />
       <NewArrivals />
       <Discount />
-      <Shop shopItems={shopItems} addToCard={addToCard} />
+      <Shop shopItems={shopItems} addToCart={addToCart} />
       <Announcement />
       <Wrapper />
     </>

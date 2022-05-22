@@ -23,7 +23,7 @@ const SamplePrevArrow = (props) => {
     </div>
   );
 };
-const FlashCard = ({ productItems, addToCard }) => {
+const FlashCard = ({ productItems, addToCart }) => {
   const [count, setCount] = useState(0);
   const increment = () => {
     setCount(count + 1);
@@ -64,7 +64,7 @@ const FlashCard = ({ productItems, addToCard }) => {
                   </div>
                   <div className="price">
                     <h4>${productItems.price}.00 </h4>
-                    <button onClick={() => addToCard(productItems)}>
+                    <button onClick={() => addToCart(productItems)}>
                       <i className="fa fa-plus"></i>
                     </button>
                   </div>

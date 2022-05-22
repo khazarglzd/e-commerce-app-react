@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Tdata from "./Tdata";
 
-const TopCard = () => {
+const TopCart = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -35,4 +35,4 @@ const TopCard = () => {
   );
 };
 
-export default TopCard;
+export default TopCart;

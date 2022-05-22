@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ShopCard = ({ shopItems, addToCard }) => {
+const ShopCart = ({ shopItems, addToCart }) => {
   const [count, setCount] = useState(0);
   const increment = () => {
     setCount(count + 1);
@@ -31,7 +31,7 @@ const ShopCard = ({ shopItems, addToCard }) => {
                 </div>
                 <div className="price">
                   <h4>${shopItems.price}.00 </h4>
-                  <button onClick={() => addToCard(shopItems)}>
+                  <button onClick={() => addToCart(shopItems)}>
                     <i className="fa fa-plus"></i>
                   </button>
                 </div>
@@ -44,4 +44,4 @@ const ShopCard = ({ shopItems, addToCard }) => {
   );
 };
 
-export default ShopCard;
+export default ShopCart;

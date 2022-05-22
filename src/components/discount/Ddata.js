@@ -21,17 +21,17 @@ const Ddata = [
   },
   {
     cover: "./images/discount/discount-5.png",
-    name: "Tony BGB",
+    name: "Sony BGB",
     price: "$20",
   },
   {
     cover: "./images/discount/discount-6.png",
-    name: "RG products",
+    name: "RG Products",
     price: "$200",
   },
   {
     cover: "./images/discount/discount-7.png",
-    name: "Ranasonic 2022",
+    name: "Panasonic 2022",
     price: "$300",
   },
   {

@@ -26,7 +26,7 @@ const Ndata = [
   },
   {
     cover: "./images/arrivals/arrivals6.png",
-    name: "Bonsai tree",
+    name: "Bonsai Tree",
     price: "400",
   },
 ];

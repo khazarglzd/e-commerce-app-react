@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import Cart from "./Cart";
 import "./style.css";
 
 const NewArrivals = () => {
@@ -20,7 +20,7 @@ const NewArrivals = () => {
               <i className="fa-solid fa-caret-right"></i>
             </div>
           </div>
-          <Card />
+          <Cart />
         </div>
       </section>
     </>

@@ -4,12 +4,12 @@ import Search from "./Search";
 import "./Header.css";
 import Navbar from "./Navbar";
 
-const Header = (cardItem) => {
+const Header = (CartItem) => {
   return (
     <>
       <Head />
       <Navbar />
-      <Search cardItem={cardItem} />
+      <Search CartItem={CartItem} />
     </>
   );
 };

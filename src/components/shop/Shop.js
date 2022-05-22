@@ -1,9 +1,9 @@
 import React from "react";
 import Catg from "./Catg";
-import ShopCard from "./ShopCard";
+import ShopCart from "./ShopCart";
 import "./style.css";
 
-const Shop = ({ addToCard, shopItems }) => {
+const Shop = ({ addToCart, shopItems }) => {
   return (
     <>
       <section className="shop background">
@@ -20,7 +20,7 @@ const Shop = ({ addToCard, shopItems }) => {
               </div>
             </div>
             <div className="product-content  grid1">
-              <ShopCard addToCard={addToCard} shopItems={shopItems} />
+              <ShopCart addToCart={addToCart} shopItems={shopItems} />
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import Ndata from "./Ndata";
 
-const Card = () => {
+const Cart = () => {
   return (
     <>
       <div className="content grid product">
@@ -21,4 +21,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Cart;

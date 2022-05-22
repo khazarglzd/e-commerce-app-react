@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import TopCard from "./TopCard";
+import TopCart from "./TopCart";
 
 const TopCate = () => {
   return (
@@ -17,7 +17,7 @@ const TopCate = () => {
               <i className="fa-solid fa-caret-right"></i>
             </div>
           </div>
-          <TopCard />
+          <TopCart />
         </div>
       </section>
     </>
